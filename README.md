@@ -1,2 +1,2 @@
-# Software-Egineering
+# Software-Engineering
 MSUM CSIS 340 Software Engineers

@@ -27,6 +27,14 @@ link to setup large file storage: http://en.joysword.com/posts/2016/03/setting_u
 - here
 
 ## Personas
+- Natalie 
+    - Veteran player
+- Frank 
+    - First-time player
+- Arthur 
+    - Game Critic
+- Ned
+    - Spectator
 
 ## User Stories
 

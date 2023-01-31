@@ -12,14 +12,13 @@ Our software is a simple competetive multiplayer game that we are designing in u
 ## Stakeholders
 
 ### Software Engineers
-- list
-- wants
-- here
+- Easy to maintain / fix bugs
+- Scalable 
 
 ### Players
-- list
-- wants
-- here
+- Easy to learn
+- Fun
+- Runs smoothly
 
 ### Distributors (Steam, Gamestop, Best Buy)
 - list
@@ -45,6 +44,11 @@ Our software is a simple competetive multiplayer game that we are designing in u
 
 
 ## User Stories
+- Story 1: (Natalie, Veteran Player) - (Made by Christian)
+- Natalie played a small competitive game with her friends and communicated through the chat system. She was able to face her friends and won first place. She was pleased to be able to track her total wins by having an account to log in.
+
+- Story 2: (Natalie, Veteran Player) - (Made by Christian)
+- Natalie found this game and wanted to be able to personalize her character and play with only her friends. She created an account that allowed her to change the shape's color and invite her friends to a private lobby. She was happy the login worked correctly and that she could host her lobbies.
 
 ## Use Case Diagram
 

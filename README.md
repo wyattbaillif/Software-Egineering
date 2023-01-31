@@ -7,7 +7,7 @@ Christian did this part lol
 link to setup large file storage: http://en.joysword.com/posts/2016/03/setting_up_github_for_unity_projects/
 
 ## Description
-
+Our software is a simple competetive multiplayer game that we are designing in unity. The target customers of this game is both veteran and first time gamers as well as people who enjoy spectating competitive gaming. In order to access our software it will be sent to distributors as a downloadable package and sold to customers and players who fall in our target audience.
 
 ## Stakeholders
 
@@ -41,7 +41,6 @@ link to setup large file storage: http://en.joysword.com/posts/2016/03/setting_u
 - Ned (made by Keegan)
     - Spectator
         - Ned is a 30-year-old who is not a player but a big gaming fan. He enjoys watching others play and live stream on platforms like Twitch. He is knowledgeable about the gaming industry and is always up-to-date with the latest releases and trends. He is social and enjoys talking to others about gaming and discussing strategies and theories. He also enjoys attending gaming events and meeting other fans.
-
 
 
 ## User Stories

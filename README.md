@@ -46,10 +46,10 @@ link to setup large file storage: http://en.joysword.com/posts/2016/03/setting_u
 
 ## User Stories
 - Story 1: (Natalie, Veteran Player) - (Made by Christian)
-Natalie played a small competitive game with her friends and communicated through the chat system. She was able to face her friends and won first place. She was pleased to be able to track her total wins by having an account to log in.
+- Natalie played a small competitive game with her friends and communicated through the chat system. She was able to face her friends and won first place. She was pleased to be able to track her total wins by having an account to log in.
 
 - Story 2: (Natalie, Veteran Player) - (Made by Christian)
-Natalie found this game and wanted to be able to personalize her character and play with only her friends. She created an account that allowed her to change the shape's color and invite her friends to a private lobby. She was happy the login worked correctly and that she could host her lobbies.
+- Natalie found this game and wanted to be able to personalize her character and play with only her friends. She created an account that allowed her to change the shape's color and invite her friends to a private lobby. She was happy the login worked correctly and that she could host her lobbies.
 
 ## Use Case Diagram
 

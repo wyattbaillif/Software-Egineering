@@ -12,14 +12,13 @@ link to setup large file storage: http://en.joysword.com/posts/2016/03/setting_u
 ## Stakeholders
 
 ### Software Engineers
-- list
-- wants
-- here
+- Easy to maintain / fix bugs
+- Scalable 
 
 ### Players
-- list
-- wants
-- here
+- Easy to learn
+- Fun
+- Runs smoothly
 
 ### Distributors (Steam, Gamestop, Best Buy)
 - list

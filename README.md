@@ -5,6 +5,7 @@ garrett did this in his branch
 Christian did this part lol
 
 link to setup large file storage: http://en.joysword.com/posts/2016/03/setting_up_github_for_unity_projects/
+link to setup score with database: https://www.red-gate.com/simple-talk/development/dotnet-development/using-mysql-unity/#:~:text=Even%20games%20must%20store%20data,Unity%20is%20a%20game%20engine.
 
 ## Description
 Our software is a simple competetive multiplayer game that we are designing in unity. The target customers of this game is both veteran and first time gamers as well as people who enjoy spectating competitive gaming. In order to access our software it will be sent to distributors as a downloadable package and sold to customers and players who fall in our target audience.

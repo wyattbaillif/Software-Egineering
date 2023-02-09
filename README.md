@@ -51,5 +51,6 @@ Our software is a simple competetive multiplayer game that we are designing in u
 - Natalie found this game and wanted to be able to personalize her character and play with only her friends. She created an account that allowed her to change the shape's color and invite her friends to a private lobby. She was happy the login worked correctly and that she could host her lobbies.
 
 ## Use Case Diagram
+![User case diagram](https://user-images.githubusercontent.com/64097842/217949418-93bf3727-1265-4095-b818-b9cb6405db4e.jpeg)
 
 ## Requirements

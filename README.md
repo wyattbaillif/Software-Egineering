@@ -63,6 +63,20 @@ Our software is a simple competetive multiplayer game that we are designing in u
 
 
 ## Use Case Diagram
-![User case diagram](https://user-images.githubusercontent.com/64097842/217949418-93bf3727-1265-4095-b818-b9cb6405db4e.jpeg)
 
 ## Requirements
+- Functional
+    -A player's score should update accuratly
+    -A player should be able to join a lobby
+    -A player should be able to create a lobby
+    -A player should be able to login and have score information tied to their account
+
+-Non-Functional
+    -The base game should run smoothy (high frame rates on low end systems)
+    -The lobby should be simple and easy to navigate
+    -the gameplay will be competitive and engaging
+    -the game should make sense after just playing once
+
+-Non-Requirements
+    -Gameplay wont support greater than 4 players
+    -Leaderboards doesn't support offline mode or guest accounts

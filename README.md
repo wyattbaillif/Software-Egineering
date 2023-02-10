@@ -5,6 +5,7 @@ garrett did this in his branch
 Christian did this part lol
 
 link to setup large file storage: http://en.joysword.com/posts/2016/03/setting_up_github_for_unity_projects/
+link to setup score with database: https://www.red-gate.com/simple-talk/development/dotnet-development/using-mysql-unity/#:~:text=Even%20games%20must%20store%20data,Unity%20is%20a%20game%20engine.
 
 ## Description
 Our software is a simple competetive multiplayer game that we are designing in unity. The target customers of this game is both veteran and first time gamers as well as people who enjoy spectating competitive gaming. In order to access our software it will be sent to distributors as a downloadable package and sold to customers and players who fall in our target audience.
@@ -13,17 +14,18 @@ Our software is a simple competetive multiplayer game that we are designing in u
 
 ### Software Engineers
 - Easy to maintain / fix bugs
-- Scalable 
+- Scalable: Able to perform well on diferent hardware configurations and accommodate varying number of players. 
 
 ### Players
-- Easy to learn
-- Fun
-- Runs smoothly
+- Easy to learn: Game mechanics are intuitive and quick to learn.
+- Fun: Is engaging and set at an appropriate pace. 
+- Runs smoothly: Minimal framerate drops.
 
 ### Distributors (Steam, Gamestop, Best Buy)
-- list
-- wants
-- here
+- Quality: A game with intentional graphics and engaging gameplay.
+- Unique selling points: Does the game offer something new?
+- Platform compatibility: Is the game crossplay compatible? How easy is it to port to another platform? 
+- Revenue potential: Does the game have the potential to generate significant revenue?
 
 ## Personas
 - Natalie (made by Christian)
@@ -44,13 +46,38 @@ Our software is a simple competetive multiplayer game that we are designing in u
 
 
 ## User Stories
-- Story 1: (Natalie, Veteran Player) - (Made by Christian)
+#### Story 1: (Natalie, Veteran Player) - (Made by Christian)
 - Natalie played a small competitive game with her friends and communicated through the chat system. She was able to face her friends and won first place. She was pleased to be able to track her total wins by having an account to log in.
 
-- Story 2: (Natalie, Veteran Player) - (Made by Christian)
+#### Story 2: (Natalie, Veteran Player) - (Made by Christian)
 - Natalie found this game and wanted to be able to personalize her character and play with only her friends. She created an account that allowed her to change the shape's color and invite her friends to a private lobby. She was happy the login worked correctly and that she could host her lobbies.
+
+#### Story 3: (Ned, Spectator) - (Made by Keegan)
+- Ned checked the game's leaderboards and discovered a new top player using unique strategies. He watched their streams and reached out to the player through chat.      They became friends, exchanging tips and discussing the gaming industry. The leaderboards enabled Ned to find and connect with talented players.
+
+#### Story 4: (Ned, Spectator) - (Made by Keegan)
+- Ned was watching Natalie's live stream of a new fast-paced multiplayer game. He was impressed by the streamer's quick reflexes and strategic thinking. Ned jumped      into the chat to ask the streamer about their techniques. The streamer was happy to share their knowledge, and the two engaged in a lively discussion about the         game. Ned left the stream feeling inspired and with a newfound respect for the streamer's skills, grateful for the game's ability to bring players and fans             together in a shared love of gaming in a competitive yet communal fashion. 
+
+#### Story 5: (Natalie, Veteran Player) - (Made by Keegan)
+- Natalie was playing the game when her opponent found a game-breaking bug and instantly won the match. Natalie went into the menu and used the game's report-a-bug feature to notify the game developers of the problem. She later got a notification that the bug had been successfully reported and the game developers are working on fixing the issue. Natalie was happy that she was able to contribute to bettering the game. 
+
 
 ## Use Case Diagram
 ![User case diagram](https://user-images.githubusercontent.com/64097842/217949418-93bf3727-1265-4095-b818-b9cb6405db4e.jpeg)
 
 ## Requirements
+#### Functional
+- A player's score should update accuratly
+- A player should be able to join a lobby
+- A player should be able to create a lobby
+- A player should be able to login and have score information tied to their account
+
+#### Non-Functional
+- The base game should run smoothy (high frame rates on low end systems)
+- The lobby should be simple and easy to navigate
+- the gameplay will be competitive and engaging
+- the game should make sense after just playing once
+
+#### Non-Requirements
+- Gameplay wont support greater than 4 players
+- Leaderboards doesn't support offline mode or guest accounts

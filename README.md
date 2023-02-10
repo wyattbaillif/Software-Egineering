@@ -61,6 +61,11 @@ Our software is a simple competetive multiplayer game that we are designing in u
 #### Story 5: (Natalie, Veteran Player) - (Made by Keegan)
 - Natalie was playing the game when her opponent found a game-breaking bug and instantly won the match. Natalie went into the menu and used the game's report-a-bug feature to notify the game developers of the problem. She later got a notification that the bug had been successfully reported and the game developers are working on fixing the issue. Natalie was happy that she was able to contribute to bettering the game. 
 
+### Story 6: (Arthur, Game Critic) - (Made by Garrett)
+- As Arthur plays the latest competitive multiplayer game, he takes detailed notes on its features, gameplay, and overall performance. He tests out both the spectator and player game modes on his account allowing different ways to interact with other players and get a comprehensive understanding of the game's mechanics. In spectator mode, he is able to view the leaderboard and watch a game lobby while players compete. While using the player game mode he understands the controls of the game and gets to compete online against other players with little to no technical issues. He then writes an in-depth review of the game, mentioning how smoothly the game runs specifically noting that it had high performance even when being used on low end systems. He also provides tips and tricks to help players improve their gameplay, and offers his personal opinion on whether the game is worth purchasing.
+
+### Story 7: (Frank, First-Time Player) (Made by Garrett)
+- Frank decides to try out a new game that he had heard about online on a night where he has a lot free time that he is not used to. He logs onto the game and navigates his way to the first menu where he plays as a guest, since he is not sure about creating an account. From there he presses the join a lobby button and is vaulted into his first game. He loses very quickly and is confused about what he could do to improve. He sends a message in the chat asking the other players in his lobby what just happened, explaining that he is new to the game and doesn't know what he is doing. After a moment someone in the lobby explains where he can find the controls listed in the menu and that there are also tutorials as well as a spectator mode where he can learn more and becoming a stronger player. Frank decides to commit some time to learning the game and is happy that he could get some help from the gaming community allowing him to learn how to play in just his first game played.
 
 ## Use Case Diagram
 ![User case diagram](https://user-images.githubusercontent.com/64097842/217949418-93bf3727-1265-4095-b818-b9cb6405db4e.jpeg)
@@ -71,6 +76,8 @@ Our software is a simple competetive multiplayer game that we are designing in u
 - A player should be able to join a lobby
 - A player should be able to create a lobby
 - A player should be able to login and have score information tied to their account
+- A player should find a controls display in the menu explaining all of the buttons used when playing
+- A new player should be able to play a tutorial mode that explains the core gameplay mechanics
 
 #### Non-Functional
 - The base game should run smoothy (high frame rates on low end systems)

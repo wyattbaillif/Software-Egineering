@@ -68,7 +68,7 @@ Our software is a simple competetive multiplayer game that we are designing in u
 - Frank decides to try out a new game that he had heard about online on a night where he has a lot free time that he is not used to. He logs onto the game and navigates his way to the first menu where he plays as a guest, since he is not sure about creating an account. From there he presses the join a lobby button and is vaulted into his first game. He loses very quickly and is confused about what he could do to improve. He sends a message in the chat asking the other players in his lobby what just happened, explaining that he is new to the game and doesn't know what he is doing. After a moment someone in the lobby explains where he can find the controls listed in the menu and that there are also tutorials as well as a spectator mode where he can learn more and becoming a stronger player. Frank decides to commit some time to learning the game and is happy that he could get some help from the gaming community allowing him to learn how to play in just his first game played.
 
 ## Use Case Diagram
-![User case diagram (1)](https://user-images.githubusercontent.com/64097842/218872504-f35f5e47-3dfb-43f1-b86e-6104beadc9c5.jpeg)
+![User case diagram (2)](https://user-images.githubusercontent.com/64097842/218872720-696a159c-e9de-4d74-a838-9759c53472ac.jpeg)
 
 ## Requirements
 #### Functional

@@ -74,7 +74,7 @@ Our software is a simple competetive multiplayer game that we are designing in u
 - Arthur who is looking around for new simple games comes across a game he has not seen before. Unsure exactly what the goal of the game is or how to play, he nonetheless decides to play the game. Once he joins a lobby and the game starts, he doesn't quite understand what is happening and he is quickly eliminated. But, after he is eliminated he continues to watch the other players that are still competing. He very quickly and easily understands the objective of the game and does not need to look for any other help or guides because he already knows how he can try and win the next round just by playing once.
 
 ## Use Case Diagram
-![User case diagram](https://user-images.githubusercontent.com/64097842/217949418-93bf3727-1265-4095-b818-b9cb6405db4e.jpeg)
+![User case diagram (2)](https://user-images.githubusercontent.com/64097842/218872720-696a159c-e9de-4d74-a838-9759c53472ac.jpeg)
 
 ## Requirements
 #### Functional

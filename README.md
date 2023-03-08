@@ -1,10 +1,22 @@
 # Software-Engineering
 MSUM CSIS 340 Software Engineers
 
-garrett did this in his branch
-Christian did this part lol
+##HOW TO CLONE AND BUILD REPOSITORY
+- prereqs
+    - Unity version 2021.3.16f1 (https://download.unity3d.com/download_unity/4016570cf34f/UnityDownloadAssistant-2021.3.16f1.exe)
+    - Git intalled
 
-link to setup large file storage: http://en.joysword.com/posts/2016/03/setting_up_github_for_unity_projects/
+- configure/build
+    - Create a new 2d project in unity
+    - In a seperate folder clone this repository
+    - drag unity project into repository, select "Do not replace existing files"
+    
+- steps to run/execute
+    - When you launch unity hub, go to the directory of your repository and open the project
+    - the project should now always open from that directory
+    - when you click the play button in unity, it will build all of the code in the assets folder automatically
+    
+
 link to setup score with database: https://www.red-gate.com/simple-talk/development/dotnet-development/using-mysql-unity/#:~:text=Even%20games%20must%20store%20data,Unity%20is%20a%20game%20engine.
 
 ## Description

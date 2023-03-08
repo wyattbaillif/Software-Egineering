@@ -1,7 +1,7 @@
 # Software-Engineering
 MSUM CSIS 340 Software Engineers
 
-##HOW TO CLONE AND BUILD REPOSITORY
+## HOW TO CLONE AND BUILD REPOSITORY
 - prereqs
     - Unity version 2021.3.16f1 (https://download.unity3d.com/download_unity/4016570cf34f/UnityDownloadAssistant-2021.3.16f1.exe)
     - Git intalled
@@ -17,7 +17,6 @@ MSUM CSIS 340 Software Engineers
     - when you click the play button in unity, it will build all of the code in the assets folder automatically
     
 
-link to setup score with database: https://www.red-gate.com/simple-talk/development/dotnet-development/using-mysql-unity/#:~:text=Even%20games%20must%20store%20data,Unity%20is%20a%20game%20engine.
 
 ## Description
 Our software is a simple competetive multiplayer game that we are designing in unity. The target customers of this game is both veteran and first time gamers as well as people who enjoy spectating competitive gaming. In order to access our software it will be sent to distributors as a downloadable package and sold to customers and players who fall in our target audience.
@@ -106,3 +105,6 @@ Our software is a simple competetive multiplayer game that we are designing in u
 #### Non-Requirements
 - Gameplay wont support greater than 4 players
 - Leaderboards doesn't support offline mode or guest accounts
+
+## Useful links
+- link to setup score with database: https://www.red-gate.com/simple-talk/development/dotnet-development/using-mysql-unity/#:~:text=Even%20games%20must%20store%20data,Unity%20is%20a%20game%20engine.

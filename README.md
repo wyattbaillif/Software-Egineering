@@ -88,3 +88,8 @@ Our software is a simple competetive multiplayer game that we are designing in u
 #### Non-Requirements
 - Gameplay wont support greater than 4 players
 - Leaderboards doesn't support offline mode or guest accounts
+
+#### Sprint #1
+- Product owner for this sprint: Wyatt B
+- Our focus is on anything having to do with gameplay and database setup for next sprint, it will deliver a fun and competitive experience to the players and it will be confirmed when we have a fully running base version of the game.
+- Link to the groomed backlog with the items we plan to accomplish during this sprint moved to the Ready column.

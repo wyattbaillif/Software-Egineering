@@ -1,11 +1,22 @@
 # Software-Engineering
 MSUM CSIS 340 Software Engineers
 
-garrett did this in his branch
-Christian did this part lol
+## HOW TO CLONE AND BUILD REPOSITORY
+- prereqs
+    - Unity version 2021.3.16f1 (https://download.unity3d.com/download_unity/4016570cf34f/UnityDownloadAssistant-2021.3.16f1.exe)
+    - Git intalled
 
-link to setup large file storage: http://en.joysword.com/posts/2016/03/setting_up_github_for_unity_projects/
-link to setup score with database: https://www.red-gate.com/simple-talk/development/dotnet-development/using-mysql-unity/#:~:text=Even%20games%20must%20store%20data,Unity%20is%20a%20game%20engine.
+- configure/build
+    - Create a new 2d project in unity
+    - In a seperate folder clone this repository
+    - drag unity project into repository, select "Do not replace existing files"
+    
+- steps to run/execute
+    - When you launch unity hub, go to the directory of your repository and open the project
+    - the project should now always open from that directory
+    - when you click the play button in unity, it will build all of the code in the assets folder automatically
+    
+
 
 ## Description
 Our software is a simple competetive multiplayer game that we are designing in unity. The target customers of this game is both veteran and first time gamers as well as people who enjoy spectating competitive gaming. In order to access our software it will be sent to distributors as a downloadable package and sold to customers and players who fall in our target audience.
@@ -67,6 +78,12 @@ Our software is a simple competetive multiplayer game that we are designing in u
 ### Story 7: (Frank, First-Time Player) (Made by Garrett)
 - Frank decides to try out a new game that he had heard about online on a night where he has a lot free time that he is not used to. He logs onto the game and navigates his way to the first menu where he plays as a guest, since he is not sure about creating an account. From there he presses the join a lobby button and is vaulted into his first game. He loses very quickly and is confused about what he could do to improve. He sends a message in the chat asking the other players in his lobby what just happened, explaining that he is new to the game and doesn't know what he is doing. After a moment someone in the lobby explains where he can find the controls listed in the menu and that there are also tutorials as well as a spectator mode where he can learn more and becoming a stronger player. Frank decides to commit some time to learning the game and is happy that he could get some help from the gaming community allowing him to learn how to play in just his first game played.
 
+#### Story 8: (Frank, First-Time Player) - (Made by Wyatt)
+- A few tell Frank, who does not really play a lot of online games with his friends to play this new game with them. He doesn't have to make an account and proceeds to join their private lobby so the only people playing are in his friend group. In the first few seconds before the game starts a quick prompt explains the basic rules of the game and frank understands how he can interact with the character in order to compete in the game. Even though he isn't the best at video games, this game provides enough uniqueness between rounds that even Frank as a first-time player can get a few wins against his friends.
+
+#### Story 9: (Arthur, Game Critic) - (Made by Wyatt)
+- Arthur who is looking around for new simple games comes across a game he has not seen before. Unsure exactly what the goal of the game is or how to play, he nonetheless decides to play the game. Once he joins a lobby and the game starts, he doesn't quite understand what is happening and he is quickly eliminated. But, after he is eliminated he continues to watch the other players that are still competing. He very quickly and easily understands the objective of the game and does not need to look for any other help or guides because he already knows how he can try and win the next round just by playing once.
+
 ## Use Case Diagram
 ![User case diagram (2)](https://user-images.githubusercontent.com/64097842/218872720-696a159c-e9de-4d74-a838-9759c53472ac.jpeg)
 
@@ -89,7 +106,11 @@ Our software is a simple competetive multiplayer game that we are designing in u
 - Gameplay wont support greater than 4 players
 - Leaderboards doesn't support offline mode or guest accounts
 
+
 #### Sprint #1
 - Product owner for this sprint: Wyatt B
 - Our focus is on anything having to do with gameplay and database setup for next sprint, it will deliver a fun and competitive experience to the players and it will be confirmed when we have a fully running base version of the game.
 - Link to the groomed backlog with the items we plan to accomplish during this sprint moved to the Ready column.
+=======
+## Useful links
+- link to setup score with database: https://www.red-gate.com/simple-talk/development/dotnet-development/using-mysql-unity/#:~:text=Even%20games%20must%20store%20data,Unity%20is%20a%20game%20engine.

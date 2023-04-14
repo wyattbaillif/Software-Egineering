@@ -6,10 +6,14 @@ public class MovementTest : MonoBehaviour
 {
     //creating public variables add them to unity's UI -Wyatt
 
+<<<<<<< Updated upstream
     public float speed =.05f;
 <<<<<<< Updated upstream
 =======
 
+>>>>>>> Stashed changes
+=======
+    public float speed = 1f;
 >>>>>>> Stashed changes
 
     // Update is called once per frame

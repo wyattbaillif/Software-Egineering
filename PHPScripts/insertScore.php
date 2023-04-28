@@ -10,16 +10,15 @@ $conn = new mysqli($servername, $username, $password, $dbName);
 
 // Check connection
 if ($conn->connect_errno) {
-  echo "Failed to connect to MySQL: " . $mysqli->connect_error;
-  exit();
+  die("Failed to connect to MySQL: " . $mysqli->connect_error);
 }
 
 // Prepare the query
 $stmt = $conn->prepare("INSERT INTO score (user, score) VALUES (?, ?)");
 
 // Bind the parameters
-$user = "Keegan";
-$score = rand(1000, 9999); // Generate a random 4 digit integer
+$user = $_POST["userPost"]; // Grab username from post
+$score = $_POST["scorePost"]; // Grab score from post
 $stmt->bind_param("si", $user, $score);
 
 // Execute the query

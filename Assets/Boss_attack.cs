@@ -29,7 +29,7 @@ public class Boss_attack : MonoBehaviour
         Vector3 randomDirection = Random.insideUnitSphere * randomRange;
 
         // Add the force to the instance
-        Rigidbody rb = instance.GetComponent<Rigidbody>();
+        Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
         rb.AddForce(randomDirection * force);
         
         // Start the coroutine to destroy the clone after a set duration
@@ -44,6 +44,14 @@ public class Boss_attack : MonoBehaviour
         Destroy(clone);
     }
 
+    private void OnTriggerEnter(Collider other) 
+    {
+        // Destroy the clone if it collides with another gameobject
+        if (other.gameObject.tag != "Boss")
+        {
+            Destroy(this.gameObject);
+        }
+    }
     // Update is called once per frame
     void Update()
     {

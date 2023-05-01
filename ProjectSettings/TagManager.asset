@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Projectile
+  - Boss
+  - Boundry
+  - P1
+  - P2
+  - P3
+  - P4
   layers:
   - Default
   - TransparentFX
@@ -11,8 +18,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - players
+  - boss
   - 
   - 
   - 
@@ -40,4 +47,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: players
+    uniqueID: 877687769
+    locked: 0
+  - name: boss
+    uniqueID: 3260990643
     locked: 0

@@ -20,11 +20,15 @@ public class GameEnd : MonoBehaviour
     private string player3Time;
     private string player4Time;
     public bool gameEnded=false;
+
+    private int numPlayers=0;
     
 
     public int deathCount=0;
 
     TextMeshProUGUI Winner_text;
+
+    List<GameObject> players = new List<GameObject>();
     List<Tuple<string, float>> scores = new List<Tuple<string, float>>();
 
 
@@ -61,8 +65,6 @@ public class GameEnd : MonoBehaviour
     private void Finish()
     {
         
-        
-        
         if(player1Dead==false)
         {
             player1Time=(GameObject.Find("Canvas").GetComponent<TimerContoller>().currentTime+5.0f).ToString();
@@ -87,6 +89,13 @@ public class GameEnd : MonoBehaviour
         
     }
 
+    private void Awake(){
+        foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player")){
+            players.Add(player);
+            numPlayers+=1;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -97,41 +106,20 @@ public class GameEnd : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.Find("player1").GetComponent<elimination>().playerDead==true)
-        {
-            player1Dead=true;
-            GameObject.Find("player1").GetComponent<elimination>().playerDead=false;
-            player1Time=GameObject.Find("Canvas").GetComponent<TimerContoller>().currentTime.ToString();
-            deathCount+=1;
-        }
-        if(GameObject.Find("player2").GetComponent<elimination>().playerDead==true)
-        {
-            player2Dead=true;
-            GameObject.Find("player2").GetComponent<elimination>().playerDead=false;
-            player2Time=GameObject.Find("Canvas").GetComponent<TimerContoller>().currentTime.ToString();
-            deathCount+=1;
-        }
-        if(GameObject.Find("player3").GetComponent<elimination>().playerDead==true)
-        {
-            player3Dead=true;
-            GameObject.Find("player3").GetComponent<elimination>().playerDead=false;
-            player3Time=GameObject.Find("Canvas").GetComponent<TimerContoller>().currentTime.ToString();
-            deathCount+=1;
-        }
-        if(GameObject.Find("player4").GetComponent<elimination>().playerDead==true)
-        {
-            player4Dead=true;
-            GameObject.Find("player4").GetComponent<elimination>().playerDead=false;
-            player4Time=GameObject.Find("Canvas").GetComponent<TimerContoller>().currentTime.ToString();
-            deathCount+=1;
-        }
-        if(deathCount==3)
-        {
-            gameEnded=true;
-            Destroy(GameObject.Find("Boss"));
-            Destroy(GameObject.FindWithTag("Projectile"));
-            deathCount=0;
-            Finish();
+        if(deathCount!=-1){
+            foreach(GameObject player in players){
+                if(player.GetComponent<elimination>().playerDead){
+                    deathCount+=1;
+                }
+            }
+            if(deathCount==(numPlayers-1))
+            {
+                gameEnded=true;
+                Destroy(GameObject.Find("Boss"));
+                Destroy(GameObject.Find("Projectile"));
+                deathCount=-1;
+                Finish();
+            }
         }
     }
 }

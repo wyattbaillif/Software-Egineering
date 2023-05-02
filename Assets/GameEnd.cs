@@ -4,17 +4,21 @@ using UnityEngine;
 using TMPro;
 using System;
 using System.Linq;
+using Unity.Netcode;
 
-public class GameEnd : MonoBehaviour
+public class GameEnd : NetworkBehaviour
 {
 
     public GameObject winnerText;
 
-    public bool player1Dead=false;
-    public bool player2Dead=false;
-    public bool player3Dead=false;
-    public bool player4Dead=false;
-
+    public string player1Name;
+    public string player2Name;
+    public string player3Name;
+    public string player4Name;
+    public bool player1Dead;
+    public bool player2Dead;
+    public bool player3Dead;
+    public bool player4Dead;
     private string player1Time;
     private string player2Time;
     private string player3Time;
@@ -28,16 +32,16 @@ public class GameEnd : MonoBehaviour
 
     TextMeshProUGUI Winner_text;
 
-    List<GameObject> players = new List<GameObject>();
+    List<GameObject> players1 = new List<GameObject>();
     List<Tuple<string, float>> scores = new List<Tuple<string, float>>();
 
 
     private void printScores()
     {
-        scores.Add(Tuple.Create("player 1", float.Parse(player1Time)));
-        scores.Add(Tuple.Create("player 2", float.Parse(player2Time)));
-        scores.Add(Tuple.Create("player 3", float.Parse(player3Time)));
-        scores.Add(Tuple.Create("player 4", float.Parse(player4Time)));
+        scores.Add(Tuple.Create(player1Name, float.Parse(player1Time)));
+        scores.Add(Tuple.Create(player2Name, float.Parse(player2Time)));
+        scores.Add(Tuple.Create(player3Name, float.Parse(player3Time)));
+        scores.Add(Tuple.Create(player4Name, float.Parse(player4Time)));
         
         
         var sortedScores = scores.OrderByDescending(x => x.Item2).ToList();
@@ -64,37 +68,26 @@ public class GameEnd : MonoBehaviour
     }
     private void Finish()
     {
-        
-        if(player1Dead==false)
-        {
-            player1Time=(GameObject.Find("Canvas").GetComponent<TimerContoller>().currentTime+5.0f).ToString();
-            GameObject.Find("player1").GetComponent<MovementTest>().enabled=false;
+        if(!player1Dead){
+            player1Time=elimination.Instance.Time+5f.ToString();
+            player1Name=elimination.Instance.User;
         }
-        if(player2Dead==false)
-        {
-            player2Time=(GameObject.Find("Canvas").GetComponent<TimerContoller>().currentTime+5.0f).ToString();
-            GameObject.Find("player2").GetComponent<MovementTest>().enabled=false;
+        if(!player2Dead){
+            player2Time=elimination.Instance.Time+5f.ToString();
+            player2Name=elimination.Instance.User;
         }
-        if(player3Dead==false)
-        {
-            player3Time=(GameObject.Find("Canvas").GetComponent<TimerContoller>().currentTime+5.0f).ToString();
-            GameObject.Find("player3").GetComponent<MovementTest>().enabled=false;
+        if(!player3Dead){
+            player3Time=elimination.Instance.Time+5f.ToString();
+            player3Name=elimination.Instance.User;
         }
-        if(player4Dead==false)
-        {
-            player4Time=(GameObject.Find("Canvas").GetComponent<TimerContoller>().currentTime+5.0f).ToString();
-            GameObject.Find("player4").GetComponent<MovementTest>().enabled=false;
+        if(!player4Dead){
+            player4Time=elimination.Instance.Time+5f.ToString();
+            player4Name=elimination.Instance.User;
         }
         printScores();
         
     }
 
-    private void Awake(){
-        foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player")){
-            players.Add(player);
-            numPlayers+=1;
-        }
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -107,19 +100,38 @@ public class GameEnd : MonoBehaviour
     void Update()
     {
         if(deathCount!=-1){
-            foreach(GameObject player in players){
-                if(player.GetComponent<elimination>().playerDead){
-                    deathCount+=1;
-                }
+            if(elimination.Instance.Id==0 && elimination.Instance.playerDead){
+                deathCount+=1;
+                player1Time=elimination.Instance.Time.ToString();
+                player1Name=elimination.Instance.User;
+                player1Dead=true;
             }
-            if(deathCount==(numPlayers-1))
-            {
+            if(elimination.Instance.Id==1 && elimination.Instance.playerDead){
+                deathCount+=1;
+                player2Time=elimination.Instance.Time.ToString();
+                player2Name=elimination.Instance.User;
+                player2Dead=true;
+            }
+            if(elimination.Instance.Id==2 && elimination.Instance.playerDead){
+                deathCount+=1;
+                player3Time=elimination.Instance.Time.ToString();
+                player3Name=elimination.Instance.User;
+                player3Dead=true;
+            }
+            if(elimination.Instance.Id==3 && elimination.Instance.playerDead){
+                deathCount+=1;
+                player4Time=elimination.Instance.Time.ToString();
+                player4Name=elimination.Instance.User;
+                player4Dead=true;
+            }
+            if(deathCount==3)
+                {
                 gameEnded=true;
                 Destroy(GameObject.Find("Boss"));
                 Destroy(GameObject.Find("Projectile"));
                 deathCount=-1;
                 Finish();
-            }
+                }
         }
     }
 }

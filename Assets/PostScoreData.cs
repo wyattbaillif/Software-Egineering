@@ -23,7 +23,7 @@ public class PostScoreData : MonoBehaviour
         Score += 1;
     }
 
-    public void SendScore(string username, int score)
+    public void SendScore(string username, int score) 
     {
         StartCoroutine(PostScore(username, score));
     }

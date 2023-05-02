@@ -6,7 +6,7 @@ public class elimination : MonoBehaviour
 {
     public bool playerDead = false;
 
-    public Vector3 lockPos = new Vector3(-.5f,.5f,0f);
+    public Vector3 lockPos = new Vector3(0f,0f,0f);
  
     void OnCollisionEnter2D(Collision2D coll) {
         if(coll.gameObject.tag.Equals("Projectile")) {

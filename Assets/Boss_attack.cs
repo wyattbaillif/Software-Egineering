@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 
-public class Boss_attack : MonoBehaviour
+public class Boss_attack : NetworkBehaviour
 {
 
     public float force;
     public float randomRange;
-    public GameObject prefab;
+    public Transform prefab;
     public float attackDelay = 1f; // interval between attacks
 
     public float duration = 5f; // duration of projectile before deleted
@@ -22,8 +23,11 @@ public class Boss_attack : MonoBehaviour
     {
         Vector3 centerPosition = new Vector3(0, 0, 0);
 
+        Transform instance = Instantiate(prefab, centerPosition, Quaternion.identity);
+        instance.GetComponent<NetworkObject>().Spawn(true);
+
         // Create an instance of the prefab at the center position
-        GameObject instance = Instantiate(prefab, centerPosition, Quaternion.identity);
+        //GameObject instance = Instantiate(prefab, centerPosition, Quaternion.identity);
 
         // Generate a random direction vector
         Vector3 randomDirection = Random.insideUnitSphere * randomRange;
@@ -36,7 +40,7 @@ public class Boss_attack : MonoBehaviour
         StartCoroutine(DestroyTimer(duration, instance));
     }
 
-    IEnumerator DestroyTimer(float duration, GameObject clone)
+    IEnumerator DestroyTimer(float duration, Transform clone)
     {
         yield return new WaitForSeconds(duration);
 

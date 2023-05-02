@@ -1,11 +1,8 @@
 <?php
-    $servername = "localhost";
-    $username = "Keegan";
-    $password = "Z(Dfy/)ukZLt-sl/";
-    $dbName = "software_engineers";
-    
-    $user = "TestUsr";
-    $score = rand(1,10000);
+    $servername = "154.49.142.154";
+    $username = "u663007977_Keegan";
+    $password = "340seRocks!";
+    $dbName = "u663007977_Scores";
 
     $conn = new mysqli($servername, $username, $password, $dbName);
 
@@ -15,8 +12,12 @@
     }
     
 
-    $sql = "SELECT * from score";
+    $sql = "SELECT * from Score";
     $result = mysqli_query($conn, $sql);
+
+    if (!$result) {
+        die("Query failed: " . mysqli_error($conn));
+    }
 
     if(mysqli_num_rows($result) > 0){
         while($row = mysqli_fetch_assoc($result)){

@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
+using TMPro;
 
 public class ScoreLoader : MonoBehaviour
 {
+
+    [SerializeField] private TextMeshProUGUI scoresText;
+    private string scoresString;
     // URL to fetch user scores
-    private const string URL = "http://localhost/340Scripts/USER_SCORE.php";
+    private const string URL = "https://csis340softwareengineers.com/USER_SCORE.php";
 
     // Start loading scores when the game object is enabled
     private void Start()
@@ -60,10 +65,10 @@ public class ScoreLoader : MonoBehaviour
                 {
                     // Extract the user name and score fields and add a new UserScore object to the list
                     string userName = keyValue[0].Substring("User:".Length);
-                    int score;
+                    float score;
 
                     // Try to parse the score field as an integer
-                    if (int.TryParse(keyValue[1].Substring("Score:".Length), out score))
+                    if (float.TryParse(keyValue[1].Substring("Score:".Length), out score))
                     {
                         userScores.Add(new UserScore(userName, score));
                     }
@@ -82,8 +87,10 @@ public class ScoreLoader : MonoBehaviour
 
         for (int i = 0; i < numScores; i++)
         {
+            scoresString+=scoresText.text=$"{userScores[i].userName} scored {userScores[i].score}\n";
             Debug.Log($"User {userScores[i].userName} scored {userScores[i].score}");
         }
+        scoresText.text=scoresString;
     }
 }
 
@@ -91,9 +98,9 @@ public class ScoreLoader : MonoBehaviour
 public class UserScore
 {
     public string userName;
-    public int score;
+    public float score;
 
-    public UserScore(string name, int scr)
+    public UserScore(string name, float scr)
     {
         userName = name;
         score = scr;
